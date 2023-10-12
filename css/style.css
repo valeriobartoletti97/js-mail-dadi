@@ -4,3 +4,6 @@ div.container{
 img, div.mx-auto{
     width: 300px;
 }
+main{
+    height: 2000px;
+}

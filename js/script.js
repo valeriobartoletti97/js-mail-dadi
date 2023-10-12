@@ -1,6 +1,6 @@
 const validEmail = [
     'pippo@email.it',
-    'pluto@email.it'dadi immaginedice game
+    'pluto@email.it'
 ];
 /* const results = [1, 2, 3, 4, 5, 6]; */
 const alert = document.getElementById('alert');
@@ -30,7 +30,27 @@ emailBtn.addEventListener("click", function(){
 gameBtn.addEventListener("click", function(){
     let randomNumber1 = Math.floor(Math.random() * 6) + 1; 
     let randomNumber2 = Math.floor(Math.random() * 6) + 1;
-    if(randomNumber1 === randomNunber2){
-      
+    if(randomNumber1 === randomNumber2){
+      result.innerHTML = `
+      <h2 class="pt-3 text-black text-uppercase">Pareggio!</h2>
+      <div class="mx-auto">
+          <img src="img/draw.webp" alt="draw" class="d-block ">
+      </div>
+      `
+    } else if (randomNumber1 > randomNumber2){
+      result.innerHTML = `
+      <h2 class="pt-3 text-black text-uppercase">Hai vinto!</h2>
+      <div class="mx-auto">
+          <img src="img/win.jpg" alt="win" class="d-block ">
+      </div>
+      `
+    } else {
+      result.innerHTML = `
+      <h2 class="pt-3 text-black text-uppercase">Ops... hai perso!</h2>
+      <div class="mx-auto">
+          <img src="img/lose.jpg" alt="lose" class="d-block ">
+      /div>
+      `
     }
+    result.classList.remove('d-none')
 })
