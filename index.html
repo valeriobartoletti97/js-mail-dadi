@@ -12,6 +12,17 @@
         <div class="container pt-3">
             <label for="email" class="form-label">Inserisci Email</label>
             <input type="email" class="form-control" id="email" name="email" value="" aria-describedby="emailHelp">
+            <button class="btn btn-success mt-3">Send</button>
+        </div>
+        <!-- container risposta errata -->
+        <div id="alert" class=" d-none container text-white text-center bg-danger mt-5">
+            <h2 class="py-5">Mi dispiace ma tu proprio non puoi giocare.</h2>
+        </div>
+        <!-- container risposta corretta -->
+        <div id="correct" class=" d-none container text-white text-center bg-success mt-5">
+            <h2 class="pt-5">Complimenti sei uno dei prescelti!</h2>
+            <div class="mt-3">Clicca il bottone per iniziare a giocare</div>
+            <button id="game" class="btn my-3 btn-dark">Clicca qui</button>
         </div>
     </main>
     <script src="js/script.js"></script>
