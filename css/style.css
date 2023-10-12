@@ -1,3 +1,6 @@
 div.container{
     border-radius: 20px;
 }
+img, div.mx-auto{
+    width: 300px;
+}

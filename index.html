@@ -8,7 +8,7 @@
     <title>Dadi</title>
 </head>
 <body>
-    <main class="bg-body-secondary vh-100">
+    <main class="bg-body-secondary ">
         <div class="container pt-3">
             <label for="email" class="form-label">Inserisci Email</label>
             <input type="email" class="form-control" id="email" name="email" value="" aria-describedby="emailHelp">
@@ -19,10 +19,17 @@
             <h2 class="py-5">Mi dispiace ma tu proprio non puoi giocare.</h2>
         </div>
         <!-- container risposta corretta -->
-        <div id="correct" class=" d-none container text-white text-center bg-success mt-5">
+        <div id="correct" class=" container text-white text-center bg-success mt-5">
             <h2 class="pt-5">Complimenti sei uno dei prescelti!</h2>
             <div class="mt-3">Clicca il bottone per iniziare a giocare</div>
-            <button id="game" class="btn my-3 btn-dark">Clicca qui</button>
+            <button id="game-btn" class="btn my-3 btn-dark">Clicca qui</button>
+        </div>
+        <div id="game" class="container text-white text-center bg-light mt-5">
+            <div id="result" class="text-white text-center bg-light py-5">
+                <div class="mx-auto">
+                    <img src="img/win.jpg" alt="dice game" class="d-block ">
+                </div>
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>
