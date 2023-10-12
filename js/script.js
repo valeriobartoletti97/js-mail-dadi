@@ -52,5 +52,9 @@ gameBtn.addEventListener("click", function(){
       /div>
       `
     }
-    result.classList.remove('d-none')
+    let player1 = document.getElementById('player1');
+    let player2 = document.getElementById('player2');
+    player1.innerHTML = randomNumber1;
+    player2.innerHTML = randomNumber2;
+    game.classList.remove('d-none');
 })
